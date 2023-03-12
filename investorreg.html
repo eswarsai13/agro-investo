@@ -1,0 +1,231 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:lightgray; 
+  padding-left: 370px; 
+}  
+.container {  
+  width: 60%;
+    padding: 50px;  
+    background-image: linear-gradient(to right, lightpink, lightblue);
+}  
+#too
+{
+    width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+border-radius: 30px;
+}
+.some
+{
+width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+border-radius: 30px; 
+}
+input[type=text]
+{
+  width: 28%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1; 
+  border-radius: 30px;
+}  
+ input[type=password],input[type=number],input[type=email], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1; 
+  border-radius: 30px; 
+}  
+input[type=text]:focus, input[type=password]:focus, input[type=munber]:focus, input[type=email]:focus, textarea:focus {    
+  outline: 2px solid blue ;  
+} 
+#foo
+{
+    padding-left: 30px;
+} 
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn { 
+border-radius: 30px;
+  background-color: navy;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+h1
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 300%;
+}
+#uoo
+{
+  padding-left: 50px;
+}
+</style>  
+</head>  
+<body>  
+  <div class="container">  
+  <center>  <h1> Investor Registeration Form</h1> </center>  
+  <hr> 
+  <div class="panel-body">
+    <form action="connect.php" method="post">
+      <div class="form-group">
+        <label for="Name">Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Name"
+          name="Name"
+        />
+      </div> 
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <div>
+          <label for="Male" class="radio-inline"
+            ><input
+              type="radio"
+              name="gender"
+              value="Male"
+              id="Male"
+            />Male</label
+          >
+          <label for="Female" class="radio-inline"
+            ><input
+              type="radio"
+              name="gender"
+              value="Female"
+              id="Female"
+            />Female</label
+          >
+          <label for="Other" class="radio-inline"
+            ><input
+              type="radio"
+              name="gender"
+              value="Other"
+              id="Other"
+            />Others</label
+          >
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="number">Phone:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          name="Phone"
+        />
+      </div>
+      <div class="form-group">
+        <label for="ID_type">ID type</label>
+        <div>
+          <label for="Aadhar card" class="radio-inline"
+            ><input
+              type="radio"
+              name="ID_type"
+              value="Aadhar card"
+              id="Aadhar card"
+            />Aadhar card</label
+          >
+          <label for="PAN card" class="radio-inline"
+            ><input
+              type="radio"
+              name="ID_type"
+              value="PAN card"
+              id="PAN card"
+            />PAN card</label
+          >
+          <label for="Voter ID" class="radio-inline"
+            ><input
+              type="radio"
+              name="ID_type"
+              value="Voter ID"
+              id="Voter ID"
+            />Voter ID</label
+          >
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ID_Number">ID Number:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="ID_Number"
+          name="ID_Number"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Current_Address">Current Address:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Current_Address"
+          name="Current_Address"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Pin_Code">Pin Code:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Pin_Code"
+          name="Pin_Code"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Email">Email:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Email"
+          name="Email"
+        /> 
+  
+        <div class="form-group">
+          <label for="Password">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="Password"
+            name="Password"
+          /> 
+          <div class="form-group">
+            <label for="Re_type_password">Re-type Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="Re_type_Password"
+              name="Re_type_Password"
+            />
+    <button type="submit" class="registerbtn"><b>Register</b></button>    
+</form>  
+</body>  
+</html>

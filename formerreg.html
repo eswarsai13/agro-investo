@@ -1,0 +1,135 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:lightgray;
+  padding-left: 300px;  
+}  
+.container {  
+    width: 70%;
+    padding: 50px;  
+    background-image: linear-gradient(to right, lightpink,lightblue);
+}  
+#too
+{
+    width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+border-radius: 30px;
+}
+.some
+{
+width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+border-radius: 30px; 
+}
+input[type=text]
+{
+  width: 28%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1; 
+  border-radius: 30px;
+}  
+ input[type=password],input[type=number],input[type=email], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1; 
+  border-radius: 30px; 
+}  
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus,textarea:focus {    
+  outline: 2px solid blue;  
+} 
+#foo
+{
+    padding-left: 30px;
+} 
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn { 
+border-radius: 30px;
+  background-color: navy;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+h1
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 300%;
+}
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Farmer Registeration Form</h1> </center>  
+  <hr>  
+  <label><b>Name:</b></label>  
+<input type="text"class="some" name="firstname" placeholder= "Firstname" size="15" required />    
+<label style="padding-right:70px;"></label> 
+<input type="text" class="some" name="lastname" placeholder="Lastname" size="15"required />     
+<div>  
+<label><b>Gender:</b> 
+</label>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+<b>Phone:</b>  
+</label>  
+<input type="text" name="phone" placeholder="phone no." size="10"/ required maxlength="10"><br>
+<label for="types"><b>ID type:</b></label>
+<select name="types" id="too">
+    <option value="Aadhar card">Aadhar card</option>
+    <option value="PAN card">PAN card</option>
+    <option value="Voter ID">Voter ID</option>
+</select>
+<label id="foo"><b>ID Number:</b></label>
+<input type="text" name="idnum" placeholder="ID Number" required><br>
+<b>Current Address:</b>  
+<textarea cols="80" rows="3" placeholder="Current Address" value="address" required>  
+</textarea><br> 
+<label><b>Pin code:</b></label>
+<input type="text" name="pin" placeholder="pincode" required><br>
+ <label for="email"><b>Email:</b></label>  
+ <input type="email" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password:</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password:</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <button type="submit" class="registerbtn"><b>Register</b></button>    
+</form>  
+</body>  
+</html>  

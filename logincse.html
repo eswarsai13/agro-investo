@@ -1,0 +1,128 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title> 
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+    ::placeholder
+    {
+        color: black;
+        opacity: 3px;
+    }
+    h1
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 300%;
+    }
+div
+{
+    width: 30%;
+}   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;
+  background-size: cover; 
+  padding-top: 150px; 
+}  
+button {   
+       background-image: linear-gradient(to right,pink,blue,violet);   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+        box-sizing: border-box;
+        border-radius: 30px;  
+         }   
+ form {   
+        border: transparent;   
+    }   
+ input[type=email], input[type=password] {   
+        width: 100%; 
+        border-radius: 30px;  
+        margin: 8px 0;  
+        padding: 12px 20px;
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;
+        background-color: transparent;  
+    }  
+    input[type=email]:focus, input[type=password]:focus
+    {
+        background-color: lightcyan;
+        outline: none;
+    }
+ button:hover {   
+        opacity: 0.7;   
+    }    
+ .container {   
+        padding-bottom: 5px; 
+        display: flex;
+        display: -ms-flexbox;
+    }   
+    input[type=checkbox]
+    {
+        padding-top: 50px;
+        padding-left: 0;
+        cursor: pointer;
+    }
+    .food
+    {
+        padding-left: 540px;
+        padding-bottom: 20px;
+    }
+    .good
+    {
+        float: left;
+        padding-right: 180px;
+    }
+    .hood
+    {
+        float: left;
+    }
+    .bood
+    {
+        padding-top: 20px;
+    }
+    .icon {
+        border-radius: 30px;
+        border-right: none;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        text-align: center;
+        border: 2px solid green;
+        margin: 8px 0;
+}
+</style>   
+</head>    
+<body background="bomma.jpg">  
+    <form> 
+        <center> 
+        <div class="container">
+            <i class="fa fa-user icon"></i>
+            <input type="email" placeholder="Enter Username" name="username"  autocomplete="on"><br>   
+        </div>
+        <div class="container">
+            <i class="fa fa-key icon"></i>
+            <input type="password" placeholder="Enter Password" name="password"  autocomplete="on"> <br>
+        </div> 
+        </center>
+        <div class="food">
+            <div class="good"><input type="checkbox" checked="checked"><b>Remember me</b></div>
+            <div class="hood"><a href="#"><b>Forgot password?</b> </a></div>
+        </div>
+        <center>
+        <div>
+            <a href="2 star.html" class="button"><b>Login</b></a>
+          </div>
+        </center>
+        <center>
+            <div class="icona">
+                Don't have an account?<a href="formerreg.html"><b>Register here</b></a>
+            </div>
+        </center>
+    </form>     
+</body>     
+</html>  
